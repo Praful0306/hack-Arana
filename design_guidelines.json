@@ -1,0 +1,93 @@
+{
+  "theme": "dark",
+  "archetype": "7 (Electric & Neon)",
+  "colors": {
+    "background": "#0D0D1A",
+    "foreground": "#E2E8F0",
+    "primary": "#6C63FF",
+    "primary_hover": "#5A52D9",
+    "surface": "#141428",
+    "surface_hover": "#1E1E38",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "accent_eng": "#3B82F6",
+    "accent_design": "#EC4899",
+    "accent_biz": "#10B981",
+    "muted": "#94A3B8"
+  },
+  "typography": {
+    "heading_font": "Unbounded, sans-serif",
+    "body_font": "Outfit, sans-serif",
+    "data_font": "JetBrains Mono, monospace",
+    "rules": [
+      "Headlines (H1/H2) MUST use tracking-tight or tracking-tighter.",
+      "Overlines MUST be uppercase, text-xs, tracking-[0.2em].",
+      "Do NOT exceed text-6xl for Hero headings. Use fluid typography clamping if possible.",
+      "Import fonts from Google Fonts in index.css or via next/font if applicable (but since this is Vite/React, use Google Fonts in index.html)."
+    ]
+  },
+  "spacing_and_layout": {
+    "global_spacing": "Use p-6 to p-8 generously on cards to create breathing room.",
+    "dashboard_grid": "Grid layout: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 with tight gap-4 or gap-6 for control room feel.",
+    "landing_grid": "Tetris grid: Asymmetrical wide gaps gap-8 to gap-12."
+  },
+  "surface_strategies": [
+    {
+      "name": "Glassmorphism",
+      "usage": "Navbars, Sticky Headers, Modals, Overlays",
+      "classes": "bg-[#0D0D1A]/70 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
+    },
+    {
+      "name": "Retro-Futurism Glow",
+      "usage": "AI Scorecards, Primary Action Cards, Team Match Cards",
+      "classes": "bg-[#141428] border border-[#6C63FF]/30 shadow-[0_0_15px_rgba(108,99,255,0.15)] hover:border-[#6C63FF]/80 transition-all duration-300"
+    },
+    {
+      "name": "Flat Dashboard Cards",
+      "usage": "Standard Data Widgets, Kanban Columns",
+      "classes": "bg-[#141428] border border-white/5 rounded-xl"
+    }
+  ],
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1767481626894-bab78ae919be?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBwdXJwbGUlMjBuZW9uJTIwc3BhY2V8ZW58MHx8fHwxNzc1MDM0MjA1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract glowing purple diamond grid on dark background, use with bg-[#0D0D1A]/70 overlay for text contrast."
+    },
+    "ai_matching_background": {
+      "url": "https://images.pexels.com/photos/10910560/pexels-photo-10910560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Vibrant abstract light painting with flowing neon glows, perfect for AI chat background or onboarding wizard."
+    },
+    "team_collaboration_1": {
+      "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxzdGFydHVwJTIwdGVhbSUyMGNvZGluZyUyMGNvbGxhYm9yYXRpbmd8ZW58MHx8fHwxNzc1MDM0MjA1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Group of startup founders collaborating. Use in Landing page features."
+    },
+    "team_collaboration_2": {
+      "url": "https://images.unsplash.com/photo-1568658176307-bfbd2873abda?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc3RhcnR1cCUyMGZvdW5kZXJzJTIwY29sbGFib3JhdGluZ3xlbnwwfHx8fDE3NzUwMzQyMDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Two smiling founders looking at a MacBook. Use for AI co-founder or profile placeholder."
+    }
+  },
+  "icons": {
+    "library": "@phosphor-icons/react",
+    "install_command": "yarn add @phosphor-icons/react",
+    "usage": "Use Phosphor icons (Duotone or Regular weight) for a high-end, clean tech appearance."
+  },
+  "animation_guidelines": [
+    "Hover states: Subtle scaling (scale-[1.02]) and border color shifts on interactive cards.",
+    "Page transitions: Use Framer Motion for staggered fade-in-up on dashboard grids and Kanban items.",
+    "Marquee: Use slow moving text marquees for 'Disciplines' (Engineering, Design, Business) on the landing page."
+  ],
+  "accessibility": [
+    "Ensure contrast ratio of 4.5:1 for normal text.",
+    "All interactive elements MUST have data-testid attributes (e.g., data-testid='create-project-btn').",
+    "Use focus-visible rings with electric purple: focus-visible:ring-2 focus-visible:ring-[#6C63FF] focus-visible:outline-none"
+  ],
+  "instructions_to_main_agent": [
+    "Install and use @phosphor-icons/react instead of lucide-react where possible for a distinct look.",
+    "Use Shadcn UI for dashboard components, heavily customizing them to match the dark navy and electric purple theme. Disable pure white backgrounds on Shadcn defaults.",
+    "For the Landing Page, construct custom HTML/Tailwind sections to create overlapping, asymmetrical bento grids.",
+    "Dashboard should be dense and data-rich. Use Recharts for the Readiness Radar Chart and Team Health Gauges.",
+    "Incorporate the domain colors (#3B82F6, #EC4899, #10B981) as bright neon accents to differentiate project roles in tags, avatars, and chart data points.",
+    "Implement the Kanban board using standard drag-and-drop libraries or just stylized columns if drag-and-drop is too complex, ensuring it fits the 'flat dashboard cards' style.",
+    "NEVER use placeholder images from dummyimage.com; ONLY use the images provided in this JSON.",
+    "Ensure all components are thoroughly customized for the 'Electric & Neon' archetype."
+  ]
+}
