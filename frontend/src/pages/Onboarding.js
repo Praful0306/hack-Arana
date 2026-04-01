@@ -76,7 +76,7 @@ export default function Onboarding() {
     try {
       await axios.post(`${API}/users/me/complete-onboarding`, {}, { withCredentials: true });
       await refreshUser();
-      toast.success("Welcome to Antigravity!");
+      toast.success("Welcome to Nexus!");
       navigate("/dashboard");
     } catch (e) { toast.error("Failed to complete onboarding"); } finally { setLoading(false); }
   };
@@ -99,7 +99,7 @@ export default function Onboarding() {
           <div className="w-10 h-10 bg-gradient-to-br from-[#6C63FF] to-[#EC4899] rounded-xl flex items-center justify-center">
             <Rocket weight="fill" className="w-5 h-5 text-white" />
           </div>
-          <span className="font-bold text-xl">Antigravity</span>
+          <span className="font-bold text-xl">Nexus</span>
         </div>
         <div className="flex items-center gap-4 mb-12">
           {[1, 2, 3].map((s) => (

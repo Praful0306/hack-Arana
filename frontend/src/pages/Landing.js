@@ -45,7 +45,7 @@ export default function Landing() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#6C63FF] to-[#EC4899] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
               <Rocket weight="fill" className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl tracking-tight">Antigravity</span>
+            <span className="font-bold text-xl tracking-tight">Nexus</span>
           </Link>
           <div className="flex items-center gap-4">
             <Link to="/login" className="btn-secondary" data-testid="landing-login-btn">
@@ -162,7 +162,7 @@ export default function Landing() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="overline text-[#6C63FF] mb-4 block">Why Antigravity?</span>
+            <span className="overline text-[#6C63FF] mb-4 block">Why Nexus?</span>
             <h2 className="text-4xl font-bold">Everything you need to launch</h2>
           </motion.div>
 
@@ -228,7 +228,7 @@ export default function Landing() {
               Create your profile, add your skills, and let our AI match you with the perfect team.
             </p>
             <Link to="/register" className="btn-primary text-lg px-10 py-4 inline-flex items-center gap-2" data-testid="cta-register-btn">
-              Join Antigravity <ArrowRight weight="bold" />
+              Join Nexus <ArrowRight weight="bold" />
             </Link>
           </motion.div>
         </div>
@@ -239,9 +239,9 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Rocket weight="fill" className="w-5 h-5 text-[#6C63FF]" />
-            <span className="font-semibold">Antigravity</span>
+            <span className="font-semibold">Nexus</span>
           </div>
-          <p className="text-sm text-[#94A3B8]">© 2024 Antigravity. Built for dreamers.</p>
+          <p className="text-sm text-[#94A3B8]">© 2024 Nexus. Built for dreamers.</p>
         </div>
       </footer>
     </div>

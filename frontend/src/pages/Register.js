@@ -65,7 +65,7 @@ export default function Register() {
             <div className="w-10 h-10 bg-gradient-to-br from-[#6C63FF] to-[#EC4899] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
               <Rocket weight="fill" className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl">Antigravity</span>
+            <span className="font-bold text-xl">Nexus</span>
           </Link>
 
           <h1 className="text-3xl font-bold mb-2">Create your account</h1>
